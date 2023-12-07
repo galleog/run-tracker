@@ -1,0 +1,10 @@
+version: '3.3'
+services:
+  db:
+    image: 'postgres:15.5-alpine'
+    ports:
+      - '15432:5432'
+    environment:
+      - POSTGRES_USER=run-tracker
+      - POSTGRES_PASSWORD=secret
+      - POSTGRES_DB=run-tracker
